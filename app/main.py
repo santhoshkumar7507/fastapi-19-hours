@@ -15,7 +15,6 @@ from .routers import post,user,auth
 from . import oauth2
 
 
-
 models.Base.metadata.create_all(bind=engine)
 
 
