@@ -11,7 +11,9 @@ from fastapi import Depends
 from .import models,schemas,utils
 from .database import engine,get_db
 from sqlalchemy.sql.functions import mode
-from .routers import post,user,auth,oauth2
+from .routers import post,user,auth
+from . import oauth2
+
 
 
 models.Base.metadata.create_all(bind=engine)

@@ -7,7 +7,7 @@ from datetime import datetime, timedelta
 
 SECRET_KEY = '09d25e06b6f66307e556610a5120202020202020202020202020202020202020'
 ALGORITHM = 'HS256'
-EXPIRE_IN = 60 * 60 * 24 * 7
+EXPIRE_IN = 60 * 24 * 7
 
 def create_access_token(data: dict):
     to_encode = data.copy()
